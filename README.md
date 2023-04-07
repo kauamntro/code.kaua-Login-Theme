@@ -8,8 +8,8 @@
 <br>
 
 <p align="center">
-  <img alt="Login" src=".github/preview-white.jpg" width="100%" border-radius="8px">
-  <img alt="Login" src=".github/preview-dark.jpg" width="100%" border-radius="8px">
+  <img alt="Login" src=".github/preview-white.png" width="100%" border-radius="8px">
+  <img alt="Login" src=".github/preview-dark.png" width="100%" border-radius="8px">
 </p>
 
 ## 🚀 Tecnologias
