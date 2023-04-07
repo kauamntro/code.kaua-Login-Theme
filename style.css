@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: .2s;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --btn-color-1: #0099ff;
+    --btn-color-2: blue;
+}
+
+.dark{
+    --bg-color: #252525;
+    --text-color: #ffffff;
+    --btn-color-1: #cf1020;
+    --btn-color-2: rgb(255, 145, 0);
+}
+
+body{
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-login .header button{
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    margin-right: 0;
+    margin-top: -2%;
+}
+
+.container-login .header button:hover{
+    opacity: 0.6;
+}
+
+.container-login .header h1{
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--text-color);
+    font-size: 1em;
+    margin-left: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.container-login{
+    display: flex;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    height: 70vh;
+    overflow: hidden;
+    width: 60vw;
+    border-radius: 8px;
+    color: var(--text-color);
+    z-index: 1;
+    box-shadow: 0px 0px 14px #000000;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    padding: 3%;
+    justify-content: center;
+}
+
+.container-login h1{
+    font-weight: 400;
+    margin-bottom: 5%;
+    margin: auto;
+}
+
+input{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: var(--text-color);
+    opacity: 0.2;
+}
+
+input:focus{
+    border: none;
+    background-color: #6464643f;
+    outline: none;
+    opacity: 1;
+}
+
+.container-login button{
+    color: var(--bg-color);
+    background-image: linear-gradient(to right, var(--btn-color-2),  var(--btn-color-1));
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    transition: .2s;
+    padding: 15px;
+}
+
+.container-login button:hover{
+    transform: scale(0.99);
+    opacity: 0.8;
+    transition: .2s;
+}
+
+@media (max-width: 1050px) {
+    #img{
+        display: none; 
+    }
+    .container-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        height: 50vh;
+        padding: 3%;
+    }
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .container-login{
+        width: 90vw;
+        padding: 1%;
+    }
+}
